@@ -36,6 +36,8 @@ function Model_FRF = FRF_train(Xtrain, Ytrain, n_tree,mtree,min_leaf, D, Command
 %         Command='FRF_points';
 %         Model_FRF = FRF_train(Xtrain, Ytrain, n_tree,mtree,min_leaf, D, Command)
 
+addpath(genpath(pwd))
+
 if isempty(n_tree)
     n_tree=min(150,floor(size(Xtrain,1)/3));
 end
