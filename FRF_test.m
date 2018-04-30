@@ -22,6 +22,8 @@ function [FRF_pred, FRFL_pred] = FRF_test(Model_FRF, Xtest, D, Command)
 %         Xtest= rand(50,1000);
 %         [FRF_pred, FRFL_pred] = FRF_test(Model_FRF, Xtest, D, Command);
 
+addpath(genpath(pwd))
+
 forest = Model_FRF.forest;
 n_tree = size(forest,2);
 
